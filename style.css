@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Poppins:wght@500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 32px;
+    
+}
+
+#pg1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #F0E9E5;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    justify-content: space-evenly;
+
+}
+
+#pg1 .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+#pg1 .logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#imobiliaria{
+    width: 486px;
+    height: 80px;
+    color: #4F4A68;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.36px;
+}
+
+#fachada{
+    width: 489px;
+    height: 90px;
+    color: #D46C3F;
+    font-family: Mohave;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 14.08px;
+}
+
+#pg1 main h2{
+    width: 600px;
+    height: 78px;
+    flex-direction: column;
+    justify-content: center;
+    color: #4F4A68;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 127.5%; /* 45.9px */
+    letter-spacing: -1.98px;
+}
+
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 567px;
+    height: 93px;
+    border-radius: 5px;
+    background: #DBD5D2;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.25) inset;
+
+}
+
+.icons-container .content{
+    gap: 50px;
+    display: flex;
+}
+
+
+.icons-container img:first-child{
+    width: 52px;
+    height: 52px;
+}
+
+.icons-container img{
+    width: 48px;
+    height: 48px;
+    transition-property: all;
+    transition-delay: 25ms;
+    transition-duration: 0.125s;
+}
+
+.icons-container a:hover img{
+    scale: 130%;
+}
+
+
+.icons-container .content:hover img:not(:hover){
+    scale: 80%;
+    opacity: .5;
+}
+
+
+/*Lado direito*/
+
+.cadastro-container{
+    flex-direction: column;
+    align-items: center;
+    width: 505px;
+    height: 1024px;
+    background: #8C6A63;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    
+}
+
+.cadastro-container h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 267px;
+    height: 86px;
+    color: #F0E9E5;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114.5%; /* 45.8px */
+    letter-spacing: -1.4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+
+}
+
+form #titulo{
+    width: 300px;
+    height: 28px;
+
+}
+
+
+form label{
+    color: #F0E9E5;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+}
+
+form input{
+    width: 203px;
+    height: 28px;
+    border: none;
+    background: #A98E89;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #F0E9E5;
+    padding-left: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    outline: 0;
+}
+
+form input:focus{
+    border: none 0;
+    outline: 0;
+}
+
+form input::placeholder{
+    color: rgba(240, 233, 229, 0.70);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+form h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 121px;
+    height: 35px;
+    color: #F0E9E5;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.84px;
+}
+
+form .endereco{
+    display: flex;
+    flex-direction: column;
+    
+}
+form .endereco h2{
+    text-align: center;
+    width: 100%;
+    
+}
+
+form .endereco .content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+form .endereco .content input{
+    width: 203px;
+    height: 28px;
+
+}
+
+
+form .endereco .element{
+    display: flex;
+    flex-direction: column;
+}
+
+form .caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .caracteristicas h2{
+    width: 174px;
+    height: 35px;
+}
+
+form .caracteristicas .content1 .comodos input{
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    padding: 0;
+}
+
+form .caracteristicas .content1 .comodos input::placeholder{
+    width: 60px;
+    height: 28px;
+    text-align: center;
+   
+}
+
+form .caracteristicas .content1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+form .caracteristicas .content1 .comodos .element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .caracteristicas .content1 .comodos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.content1 input[type="file"]{
+    display: none;
+}
+
+form .caracteristicas .content1 h4{ 
+    width: 168px;
+    height: 21px;
+    color: #F0E9E5;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+}
+
+#lFoto{
+    display: flex;
+    justify-content: center;
+    width: 204px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #A98E89;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#lFoto img{
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 50ms;
+}
+
+#lFoto img:hover{
+    scale: 140%;
+ 
+}
+
+form .caracteristicas .lado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.complemento p{
+    width: 144px;
+    height: 21px;
+    color: #F0E9E5;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    margin-bottom: 10px;
+}
+
+.complemento{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    
+}
+
+#preco{
+    width: 190px;
+    height: 31px;
+    flex-shrink: 0;
+}
+
+#cadastrar-btn{
+    padding: 0;
+    margin-top: 60px;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    background: #F0E9E5;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #8C6A63;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 50ms;
+}
+
+#cadastrar-btn:hover{
+    scale: 120%;
+    border: 2px solid #D46C3F;
+}
+
+form .caracteristicas .lado2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form .caracteristicas .lado2 input{
+    width: 204px;
+    height: 32px;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-delay: .2s;
+    
+}
+
+form .caracteristicas .lado2 input:disabled{
+    opacity: .3;
+     
+}
+
+#casa, #apartamento{
+    width: 14px;
+    height: 13px;
+    flex-shrink: 0;
+    border-radius: 90px;
+    background: #F0E9E5;
+    box-shadow: none;
+}
+
+form .caracteristicas .content2{
+    display: flex;
+    gap: 50px;
+    margin-top: 52px;
+    
+}
+
+/*Segunda parte*/
+
+#pg2{
+    display: flex;
+    flex-direction: column;
+    background-color: #8C6A63;
+    align-items: center;
+}
+
+#pg2 h1{
+    margin-top: 32px;
+    width: 504px;
+    height: 50px;
+    flex-shrink: 0; 
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.12px;
+}
+
+#imoveis-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-delay: .2s;
+
+}
+
+.card{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 1037px;
+    height: 360px;
+    flex-shrink: 0;
+    background: #F0E9E5;
+    box-shadow: 5px 6px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-delay: .2s;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
+}
+
+
+.card .infos-container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+
+}
+
+.card .aside-textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.infos-container .infos-content1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.infos-element1, .infos-element2, .infos-content2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.excluir-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url("./media/remover.png");
+    position: absolute;
+    display: block;
+    margin-right: 900px;
+    margin-top: 300px;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-delay: .2s;
+}
+
+.excluir-btn:hover{
+    cursor: pointer;
+    scale: 130%;
+}
+
+.card h2{
+    width: 133px;
+    height: 21px;
+    color: #4F4A68;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.84px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 2%;
+    align-items: center;
+}
+
+.aside-textos{
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3{
+    width: 100%;
+    height: 21px;
+    text-align: center;
+    color: #4F4A68;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
+
+}
+
+.card .aside-imagem{
+    width: 373px;
+    height: 205px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    box-shadow: 5px 6px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.resetar{
+    cursor: pointer;
+    margin: 25px;
+    padding: 10px;
+    border: none;
+    width: 163px;
+    height: 76px;
+    border-radius: 10px;
+    background: #F0E9E5;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #8C6A63;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-delay: .2s;
+
+    display: none;
+}
+
+.resetar:hover{
+    scale: 110%;
+    
+}
+
+/*Adaptação Mobile*/
+
+@media only screen and (max-width: 800px) {
+
+
+    /*Primeira parte*/
+
+    #pg1{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    main{
+        height: 600px;
+        align-items: center;
+    }
+
+    #pg1 .logo img{
+        width: 64px;
+        height: 64px;
+    }
+
+    #pg1 .logo{
+        align-items: center;
+    }
+
+    #imobiliaria{
+        text-align: center;
+        font-size: 55px;
+        width: 100%;
+        height: 60px;
+        
+    }
+
+    #fachada{
+        text-align: center;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        font-family: Mohave;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 7.04px;
+       
+    }
+
+    #pg1 main h2{
+        width: 258px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icons-container{
+        display: flex;
+        width: 90%;
+        height: 15%;
+        box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+
+    }
+
+    .icons-container img:first-child{
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /*form*/
+
+    .cadastro-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cadastro-container h1{
+        margin-top: 90px;
+        display: flex;
+        width: 209px;
+        height: 71px;
+        font-size: 24px;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    form label{
+        width: 153px;
+        height: 18px;
+        font-size: 90%;
+    }
+
+    form input{
+        width: 78%;
+        height: 78%;
+        
+    }
+
+    form input::placeholder{
+        font-size: 10px;
+    }
+
+    form #titulo{
+        width: 200px;
+        height: 25px;
+        margin-top: 5px;
+    }
+
+    form h2{
+        font-size: 20px;
+    }
+
+
+
+    form .endereco{
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+    }
+
+    form .endereco .content{
+        flex-direction: column;
+        gap: 10px;
+        height: 100%;
+    }
+
+    form .endereco .content .element label{
+        width: 100%;
+        text-align: center;
+    }
+
+ 
+    form .endereco h2{
+        margin-top: 55px;
+    }
+
+    form .endereco .content .element input{
+        width: 50%;
+        height: 90%;
+        margin-top: 5px;
+    
+    }
+
+    form .endereco .content .element{
+        align-items: center;
+    }
+
+    form .endereco .content{
+        gap: 5px;
+    }
+
+    form .caracteristicas{
+        width: 100%;
+        height: 100%;
+    }
+
+    form .caracteristicas .element label{
+        width: 100%;
+    }
+
+    form .caracteristicas h2{
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    form .caracteristicas .content1{
+        width: 100%;
+    }
+
+    form .caracteristicas .content1 .comodos {
+        gap: 10px;
+    }
+
+    form .caracteristicas .content1 .comodos input{
+        width: 50px;
+        height: 28px;
+        text-align: center;
+        padding: 0;
+       
+        
+    }
+
+    form .caracteristicas .content1 .comodos input::placeholder{
+        width: 50px;
+        font-size: 15px;
+        text-align: center;
+       
+    }
+
+    form .caracteristicas .content1 .comodos .element label{
+        text-align: center;
+    }
+
+    form .caracteristicas .content1 .comodos .element{
+        gap: 5px;
+    }
+
+    form .caracteristicas .content1 h4{
+        width: 127px;
+        height: 21px;
+        font-size: 16px;
+    }
+
+    form .caracteristicas .content2{
+        margin-bottom: 30px;
+        padding: 5%;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #lFoto{
+        width: 180px;
+        height: 38px;
+    }
+
+    form .caracteristicas .content2 .lado2 {
+        width: 100%;
+    }
+    
+    form .caracteristicas .content2 .lado2 .element input{
+        width: 78%;
+        height: 60%;
+    }
+
+    form .caracteristicas .content2 .lado2 .element input label{
+        width: 90%;
+        height: 90%;
+    }
+
+    form .caracteristicas .content2 .lado1 input{
+        width: 78%;
+        height: 78%;
+    }
+
+    form .caracteristicas .content2 .lado1 input label{
+        width: 90%;
+        height: 90%;
+    }
+   
+    #preco input{
+        width: 70%;
+        height: 70%; 
+    }
+   
+    /*Card*/
+
+    #pg2{
+        height: 100%;
+    }
+
+    #pg2 h1{
+        width: 100%;
+    }
+
+    .card{
+        width: 320px;
+        height: 500px;
+        font-size: 14px;
+    }
+
+    .card .card-content{
+        flex-direction: column;
+    }
+
+    .card .aside-imagem{
+        width: 210px;
+        height: 120px;
+        
+    }
+
+  
+
+}

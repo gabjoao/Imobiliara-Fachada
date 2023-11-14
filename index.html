@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media\icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+
+    <title>Imobiliária Fachada</title>
+</head>
+<body>
+  
+    <section id="pg1">
+
+        <main>
+            <div class="logo">
+                <img src="./media/icon.png" alt="">
+                <h1 id="imobiliaria">Imobiliária</h1>
+                <h1 id="fachada">Fachada</h1>
+            </div>
+            
+            <h2>Transformando os seus <font color="#D46C3F">sonhos</font> em <font color="D46C3F">endereços</font></h2>
+
+            <div class="icons-container">
+                <div class="content">
+                    <a href="https://github.com/gabjoao" target="_blank">
+                        <img src="./media/github.png" alt="">
+                    </a>
+                    <a href="mailto: joao.25.ribeiro01gmail.com" target="_blank">
+                        <img src="./media/email.png" alt="">
+                    </a>
+                    <a href="https://instagram.com/maria.glovacki" target="_blank">
+                        <img src="./media/instagram.png"alt="">
+                    </a>
+                    <a href="https://br.linkedin.com/in/maria-luisa-glovacki-a4bba126b" target="_blank">
+                        <img src="./media/linkedin.png"alt="">
+                    </a>
+                </div> 
+            </div>
+        </main>
+        
+        <aside class="cadastro-container">
+            <h1>Cadastre seu imóvel!</h1>
+            <form action="#pg2">
+                <label for="titulo">Título do Imóvel</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Ex:. Alex Xing">
+
+                <div class="endereco">
+                    <h2>Endereço</h2>
+                    <div class="content">
+
+                        <div class="element">
+                            <label for="rua">Rua</label>
+                            <input type="text" name="rua" id="rua" placeholder="Ex.: Rua Baker">
+                        </div>
+                        
+                        <div class="element">
+                            <label for="numero">Numero</label>
+                            <input type="number" name="numero" id="numero" placeholder="Ex.: 221" min="0">
+                        </div>
+                    </div>
+                   <div class="content">
+
+                        <div class="element">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="Ex.: Laranjeiras">
+                        </div>
+                        
+                        <div class="element">
+                            <label for="CEP">CEP</label>
+                            <input type="number" name="CEP" id="CEP" placeholder="Ex.: 84603000" min="0">
+                        </div>
+                   </div>
+                </div>
+
+                <div class="caracteristicas">
+                    <h2>Características</h2>
+                    <div class="content1">
+                        <div class="comodos">
+                            <div class="element">
+                                <label 
+                                for="quartos">Quartos</label>
+                                <input type="number" name="quartos" id="quartos" placeholder="0" min="0">
+                            </div>
+                        
+                            <div class="element">
+                                <label for="banheiros">Banheiros</label>
+                                <input type="number" name="banheiros" id="banheiros" placeholder="0" min="0">
+                            </div>
+
+                            <div class="element">
+                                <label for="garagem">Garaem</label>
+                                <input type="number" name="garagem" id="garagem" placeholder="0" min="0">
+                            </div>
+                        </div>    
+                        <h4>Foto da Fachada</h4>
+                        <label id="lFoto" for="foto"><img src="./media/upload.png" alt=""></label>
+                        <input type="file" name="foto" id="foto">
+                    </div>
+                    <div class="content2">
+                        <aside class="lado1">
+                            <div class="complemento">
+                                <p>Complemento</p>
+    
+                                <div class="element">
+                                    <input type="radio" name="complemento" id="casa" value="casa"> <label for="casa">Casa</label>
+
+                                </div>
+
+                                <div class="element">
+                                    <input type="radio" name="complemento" id="apartamento" value="apartamento"> <label for="apartamento">Apartamento</label>
+                                </div>
+                            </div>
+                            
+                            <label for="preco">Preço</label>
+                            <input type="number" name="preco" id="preco" min="0" placeholder="Ex:. X,XX">
+    
+                            <input type="submit" name="cadastrar-btn" id="cadastrar-btn" value="Cadastrar">
+                       </aside>
+                       
+                       <aside class="lado2">
+                            <div class="element">
+                                <label for="terreno">Área do Terreno (m²)</label>
+                                <input disabled type="number" name="terreno" id="terreno" min="0" placeholder="Ex:. 50">
+                            </div>
+
+                            <div class="element">
+                                <label for="construido">Área Construída (m²)</label>
+                                <input disabled type="number" name="construido" id="construido" min="0" placeholder="Ex:. 35">
+                            </div>
+                                    
+                            <div class="element">
+                                <label for="metragem">Metragem (m²)</label>
+                                <input disabled type="number" name="metragem" id="metragem" min="0" placeholder="Ex:. 20">
+                            </div>
+
+                                <div class="element">
+                                <label for="condominio">Condomínio</label>
+                                <input disabled type="text" name="condominio" id="condominio" placeholder="Ex:. Fachada">
+                            </div>
+                       </aside>
+                    </div>
+                </div>
+            </form>
+        </aside>
+    </section>
+
+    <section id="pg2">
+        <h1>Imóveis cadastrados:</h1>
+        <div id="imoveis-container">
+            
+
+        </div>
+
+        <button class="resetar" onclick="resetar()">Resetar Imóveis</button>
+
+    </section>
+
+</body>
+</html>
