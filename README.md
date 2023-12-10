@@ -1,15 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GROP6K91)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=12214747)
-# Título
-Descreva aqui sobre o que é o seu trabalho.
+#Imobiliária Fachada
 
+Imobiliária Fachada é uma marca fictícia criada para esse projeto.
+A página permite o usuário a cadastrar um imóvel, que aparecerá na página e ficará salvo toda vez que ele abrir novamente a página.
 
-# Membros
-Liste os alunos que fazem parte do grupo.
-* Nome 1
-* Nome 2
-* Nome 3
+Foram utilziadas as tecnologias HTML, CSS e JS.
+A página foi feita com intuito de estudos de JS.
 
-
-# Configuração
-Descreva o processo de instalação, configuração e dependências necessárias para a execução do seu trabalho. (caso se aplique).
+![image](https://github.com/gabjoao/Imobiliaria-Fachada/assets/99145148/db544c2b-7778-406c-b8a4-0e21acac44f2)
+![image](https://github.com/gabjoao/Imobiliaria-Fachada/assets/99145148/b909fd80-4417-40e4-ab95-b108ca91b228)
